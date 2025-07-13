@@ -9,7 +9,6 @@ This is a full-stack CRUD application built with **Angular** (frontend) and **Ru
 - ✅ **Frontend**: Angular 16+ with component-based architecture
 - ✅ **Backend**: RESTful Rails 7 API using ActiveRecord & PostgreSQL
 - ✅ **Two-Tier Architecture**: Clean separation of frontend and backend (`client_app` & `server_app`)
-- ✅ **Docker-Ready**: Includes setup for deployment with Kamal
 - ✅ **Modern Dev Practices**: Follows service-based code organization, form validation, and modular design
 
 ---
