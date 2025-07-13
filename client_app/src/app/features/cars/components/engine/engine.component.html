@@ -1,0 +1,16 @@
+<br />
+<h5>Engine</h5>
+<form [formGroup]="engineForm">
+  <input-field controlName="fuel_type"></input-field>
+  <input-field
+    controlName="displacement"
+    type="number"
+    [step]="0.1"
+    [forceNumeric]="true"
+  ></input-field>
+  <input-field
+    controlName="power"
+    type="number"
+    [forceNumeric]="true"
+  ></input-field>
+</form>

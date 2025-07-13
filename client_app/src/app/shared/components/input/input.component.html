@@ -1,0 +1,15 @@
+<div>
+  <label [for]="controlName">{{ controlName | titleize }}</label>
+  <input
+    [id]="controlName"
+    [formControlName]="controlName"
+    [type]="type"
+    [step]="step"
+    [appForceNumeric]="forceNumeric"
+    [placeholder]="placeholderValue"
+  />
+  <div *ngIf="control?.invalid && control?.touched" class="pico-color-red-500">
+    {{ validationMessage }}
+  </div>
+  <br />
+</div>

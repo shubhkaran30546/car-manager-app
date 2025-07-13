@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fuel_type: MyString
+  displacement: MyString
+
+two:
+  fuel_type: MyString
+  displacement: MyString

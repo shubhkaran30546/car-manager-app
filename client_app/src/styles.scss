@@ -1,0 +1,11 @@
+@use "@picocss/pico/scss/pico.scss";
+@use "@picocss/pico/scss/colors/utilities" with (
+  $palette: (
+    "color-families": (
+      red,
+    ),
+  ),
+  $utilities: (
+    "background-colors": false,
+  )
+);

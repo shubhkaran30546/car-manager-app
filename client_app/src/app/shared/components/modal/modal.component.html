@@ -1,0 +1,13 @@
+<dialog [open]="isOpened">
+  <article>
+    <h2>{{ title }}</h2>
+    <p>
+      {{ message }}
+    </p>
+
+    <footer>
+      <button class="secondary" (click)="close()">Cancel</button>
+      <button (click)="confirm()">Confirm</button>
+    </footer>
+  </article>
+</dialog>

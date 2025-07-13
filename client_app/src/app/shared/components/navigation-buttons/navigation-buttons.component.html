@@ -1,0 +1,8 @@
+<div>
+  <button *ngIf="hasNewBtn" [routerLink]="['./new']">Add New</button>
+  <button *ngIf="hasBackBtn" [routerLink]="backBtnNavigation">
+    Back to List
+  </button>
+
+  <button *ngIf="hasGoToEditBtn" [routerLink]="['./edit']">Go to Edit</button>
+</div>

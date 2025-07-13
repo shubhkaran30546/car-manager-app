@@ -1,0 +1,10 @@
+<details class="dropdown">
+  <summary role="button">Actions</summary>
+  <ul>
+    <li><a [routerLink]="[objectId, 'edit']" [relativeTo]="route">Edit</a></li>
+    <li>
+      <a href="#" (click)="deleteClicked($event)">Delete</a>
+    </li>
+    <li><a [routerLink]="[objectId]" [relativeTo]="route">Details</a></li>
+  </ul>
+</details>

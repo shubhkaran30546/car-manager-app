@@ -1,0 +1,21 @@
+<div class="container">
+  <br />
+  <app-navigation-buttons hasBackBtn> </app-navigation-buttons><br />
+  <h2>{{ formTitle }}</h2>
+  <form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+    <input-field controlName="brand"></input-field>
+
+    <input-field controlName="model"></input-field>
+
+    <input-field controlName="price" type="number"></input-field>
+
+    <input-field controlName="production_year" type="number"></input-field>
+
+    <app-engine [parentForm]="carForm"></app-engine> <br />
+
+    <button type="submit">
+      {{ submitButtonTitle }}
+    </button>
+  </form>
+  <br />
+</div>

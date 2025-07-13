@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  string: MyString
+  model: MyString
+  string: MyString
+  production_year: MyString
+  integer: MyString
+  price: MyString
+  decimal: MyString
+
+two:
+  brand: MyString
+  string: MyString
+  model: MyString
+  string: MyString
+  production_year: MyString
+  integer: MyString
+  price: MyString
+  decimal: MyString

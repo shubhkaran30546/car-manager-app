@@ -1,0 +1,26 @@
+<div class="container">
+  <br />
+  <article>
+    <header><h3>Car details</h3></header>
+
+    <div *ngFor="let property of carProperties">
+      <strong>{{ property.title }} </strong>
+      <span *ngIf="car">{{ car[property.key] }}</span>
+    </div>
+
+    <div *ngIf="car?.engine">
+      <strong class="font-size-medium">Engine: </strong>
+      <span class="font-size-medium">
+        {{ car.engine.fuel_type }} -- {{ car.engine.displacement }} dm3 --
+        {{ car.engine.power }} hp
+      </span>
+    </div>
+
+    <footer>
+      <app-navigation-buttons
+        hasBackBtn
+        hasGoToEditBtn
+      ></app-navigation-buttons>
+    </footer>
+  </article>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <br />
+  <h1>Cars List</h1>
+  <app-navigation-buttons hasNewBtn></app-navigation-buttons>
+  <table>
+    <thead>
+      <tr>
+        <th *ngFor="let head of headerTitles">{{ head.title }}</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let car of cars">
+        <td *ngFor="let head of headerTitles">{{ car[head.key] }}</td>
+        <td>
+          <app-actions-button
+            [objectId]="car.id"
+            [onDeleteClicked]="openModal.bind(this)"
+          ></app-actions-button>
+        </td>
+        <app-modal
+          *ngIf="modalOpen"
+          [isOpened]="modalOpen"
+          (confirmed)="handleDelete(car.id)"
+          (canceled)="handleCancel()"
+        >
+        </app-modal>
+      </tr>
+    </tbody>
+  </table>
+</div>
